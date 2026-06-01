@@ -1,0 +1,31 @@
+[project]
+name = "mcp-gpu"
+version = "0.1.0"
+description = "An MCP server that exposes local NVIDIA GPU stats and controls to any agent."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "The Authors" }]
+keywords = ["mcp", "gpu", "nvidia", "nvidia-smi", "telemetry"]
+dependencies = [
+    "mcp[cli]>=1.2.0",
+]
+
+[project.scripts]
+mcp-gpu = "mcp_gpu.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_gpu"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
