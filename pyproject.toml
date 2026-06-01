@@ -29,3 +29,8 @@ packages = ["src/mcp_gpu"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
