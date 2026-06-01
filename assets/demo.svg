@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="554" viewBox="0 0 900 554" role="img" aria-label="mcp-gpu mock-mode demo output">
+  <defs>
+    <style>
+      text { font-family: ui-monospace, "SF Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace; font-size: 14px; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="900" height="554" rx="12" fill="#0d1117"/>
+  <rect x="0" y="0" width="900" height="40" rx="12" fill="#161b22"/>
+  <rect x="0" y="28" width="900" height="12" fill="#161b22"/>
+  <circle cx="22" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="66" cy="20" r="6" fill="#27c93f"/>
+  <text x="450.0" y="25" text-anchor="middle" fill="#7d8590" font-family="ui-monospace, monospace" font-size="13px">mcp-gpu — MCP tools over stdio</text>
+    <text x="28" y="64" xml:space="preserve" fill="#7d8590">$ uv run mcp-gpu --mock        # synthetic GPUs, no hardware needed</text>
+  <text x="28" y="86" xml:space="preserve" fill="#e6edf3"> </text>
+  <text x="28" y="108" xml:space="preserve" fill="#2dd4bf">&gt; gpu_summary()</text>
+  <text x="28" y="130" xml:space="preserve" fill="#e6edf3">  2 GPU(s) detected:</text>
+  <text x="28" y="152" xml:space="preserve" fill="#f0883e">  GPU 0 (Synthetic GPU Model A): 42% util, 8192/24576 MiB (33.3%), 55C</text>
+  <text x="28" y="174" xml:space="preserve" fill="#f0883e">  GPU 1 (Synthetic GPU Model A): 3% util, 1024/24576 MiB (4.2%), 38C</text>
+  <text x="28" y="196" xml:space="preserve" fill="#e6edf3"> </text>
+  <text x="28" y="218" xml:space="preserve" fill="#2dd4bf">&gt; set_power_limit(index=0, watts=350)</text>
+  <text x="28" y="240" xml:space="preserve" fill="#e6edf3">  [mock] would run: nvidia-smi -i 0 -pl 350</text>
+  <text x="28" y="262" xml:space="preserve" fill="#e6edf3"> </text>
+  <text x="28" y="284" xml:space="preserve" fill="#2dd4bf">&gt; list_gpus()[0]</text>
+  <text x="28" y="306" xml:space="preserve" fill="#e6edf3">  {</text>
+  <text x="28" y="328" xml:space="preserve" fill="#e6edf3">    &quot;index&quot;: 0,</text>
+  <text x="28" y="350" xml:space="preserve" fill="#e6edf3">    &quot;name&quot;: &quot;Synthetic GPU Model A&quot;,</text>
+  <text x="28" y="372" xml:space="preserve" fill="#e6edf3">    &quot;memory_total_mb&quot;: 24576,</text>
+  <text x="28" y="394" xml:space="preserve" fill="#e6edf3">    &quot;memory_used_mb&quot;: 8192,</text>
+  <text x="28" y="416" xml:space="preserve" fill="#e6edf3">    &quot;utilization_pct&quot;: 42,</text>
+  <text x="28" y="438" xml:space="preserve" fill="#e6edf3">    &quot;temperature_c&quot;: 55,</text>
+  <text x="28" y="460" xml:space="preserve" fill="#e6edf3">    &quot;memory_free_mb&quot;: 16384,</text>
+  <text x="28" y="482" xml:space="preserve" fill="#e6edf3">    &quot;memory_used_pct&quot;: 33.3</text>
+  <text x="28" y="504" xml:space="preserve" fill="#e6edf3">  }</text>
+</svg>
