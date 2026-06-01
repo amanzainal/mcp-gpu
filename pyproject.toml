@@ -5,7 +5,7 @@ description = "An MCP server that exposes local NVIDIA GPU stats and controls to
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "The Authors" }]
+authors = [{ name = "Aman Zainal" }]
 keywords = ["mcp", "gpu", "nvidia", "nvidia-smi", "telemetry"]
 dependencies = [
     "mcp[cli]>=1.2.0",
